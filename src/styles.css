@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #D5CABC, #f2ede6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* Pour éviter que le contenu touche trop les bords sur petits écrans */
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(15px);
+  padding: 3rem 3rem 2rem;
+  border-radius: 1.75rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 480px;
+  transition: box-shadow 0.3s ease;
+}
+
+.app-container:hover {
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #6b4f3f;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #f7f3ee;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 6px 2px #b4a493;
+  background-color: #fff;
+}
+
+button {
+  padding: 0.75rem 1.75rem;
+  background: linear-gradient(90deg, #D5CABC, #b4a493);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  margin: 0.4rem 0.2rem;
+  box-shadow: 0 4px 10px rgba(180, 164, 147, 0.5);
+}
+
+button:hover,
+button:focus {
+  background: linear-gradient(90deg, #b4a493, #D5CABC);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(180, 164, 147, 0.7);
+  outline: none;
+}
+
+.task-container {
+  margin-top: 2.5rem;
+}
+
+.task {
+  background-color: #fff;
+  padding: 1.15rem 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.25s ease;
+}
+
+.task:hover {
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+}
+
+.task span {
+  flex-grow: 1;
+  margin-right: 1.25rem;
+  color: #4a4a4a;
+  word-break: break-word;
+  font-size: 1rem;
+  user-select: text;
+}
+
+.task button {
+  font-size: 0.9rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 10px;
+  background-color: #d5cabc;
+  color: #6b4f3f;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+}
+
+.task button:hover {
+  background-color: #b4a493;
+  color: #fff;
+}
+
+.logout-button {
+  background-color: #aa8e74;
+  margin-top: 1.5rem;
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  box-shadow: 0 5px 12px rgba(170, 142, 116, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #8f765f;
+  box-shadow: 0 8px 18px rgba(143, 118, 95, 0.75);
+}
